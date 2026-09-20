@@ -24,7 +24,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # Load trained model
 model = UNet()
 
-model_path = "models/best_masked_unet_v2_small.pth"
+model_path = "best_masked_unet_v2_small.pth"
 
 model.load_state_dict(
     torch.load(model_path, map_location=device)
